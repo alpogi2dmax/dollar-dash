@@ -8,10 +8,12 @@ with app.app_context():
     print('Deleting existing birds...')
     User.query.delete()
 
-    print('Creating bird objects...')
+    print('Creating user objects...')
     users = []
     user1 = User(username='lightyagami')
+    user2 = User(username='roronoazoro')
     users.append(user1)
+    users.append(user2)
 
     print('Adding bird objects to transaction...')
     db.session.add_all(users)
