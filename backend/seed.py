@@ -10,8 +10,8 @@ with app.app_context():
 
     print('Creating user objects...')
     users = []
-    user1 = User(username='lightyagami')
-    user2 = User(username='roronoazoro')
+    user1 = User(username='lightyagami', amount=1000)
+    user2 = User(username='roronoazoro', amount=1000)
     users.append(user1)
     users.append(user2)
 
